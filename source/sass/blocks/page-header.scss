@@ -1,0 +1,84 @@
+.page-header {
+
+  width: auto;
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.page-header__container {
+  max-width: 750px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+.page-header__title {
+  font-family: "M PLUS Rounded 1c", "Arial", sans-serif;
+  font-size: 40px;
+  letter-spacing: 12px;
+  color: $text-dark;
+  padding-top: 254px;
+  padding-bottom: 31px;
+  margin: 0 auto;
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+
+  @keyframes slidein {
+    from {
+      // margin-right: 100%;
+      width: 100%;
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    to {
+      // margin-right: 50%;
+      width: 100%;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.page-header__title--light {
+  color: $text-light;
+}
+
+.page-header__descr {
+  @include basic-text;
+  letter-spacing: 2.25px;
+  font-size: 15px;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 65px;
+  padding-bottom: 0;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-name: slideup;
+  animation-delay: 1s;
+  // задерживает анимацию в состоянии последнего кадра:
+  animation-fill-mode: forwards;
+
+  @keyframes slideup {
+    from {
+      transform: translateY(50px);
+
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.page-header__button {
+  margin: 0 auto;
+  margin-bottom: 342px;
+}

@@ -1,0 +1,8 @@
+@mixin basic-text {
+  font: {
+    family: "M PLUS Rounded 1c", "Arial", sans-serif;
+    weight: 500;
+    size: 14px;
+  }
+  color: $text-color;
+}
