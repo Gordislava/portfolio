@@ -1,0 +1,60 @@
+// добавить скрипт для появления при скролле
+
+.skills {
+  width: 73%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.skills__title {
+  @include title-text;
+  padding-top: 102px;
+  padding-bottom: 125px;
+}
+
+.skills__list {
+  @include list-norm;
+  padding-bottom: 122px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills__item {
+  position: relative;
+  width: 29%;
+  padding: 200px 15px 0 15px;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-name: slideup;
+  // задерживает анимацию в состоянии последнего кадра:
+  animation-fill-mode: forwards;
+
+  @keyframes slideup {
+    from {
+      transform: translateY(50px);
+
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+
+.skills__item::before {
+  content: "";
+  position: absolute;
+  width: 151px;
+  height: 151px;
+  background-color: $accent-light;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -72px;
+}

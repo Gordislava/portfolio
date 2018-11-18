@@ -6,3 +6,36 @@
   }
   color: $text-color;
 }
+
+@mixin title-text {
+  font: {
+    family: "M PLUS Rounded 1c", "Arial", sans-serif;
+    weight: 700;
+    size: 15px;
+  }
+  line-height: 20px;
+  color: $text-dark;
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 570px;
+    height: 13px;
+    background-image: url("../img/h1-bg.png");
+    background-repeat: no-repeat;
+    bottom: 73px;
+    left: 50%;
+    margin-left: -116px;
+  }
+}
+
+@mixin list-norm {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

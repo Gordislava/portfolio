@@ -1,0 +1,37 @@
+.about {
+  width: auto;
+  background-color: $bgr-dark;
+}
+
+.about__wrapper {
+  width: 50%;
+  margin: 0 auto;
+  animation-duration: 1s;
+  animation-name: slideleft;
+
+  @keyframes slideleft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+.about__title {
+  @include title-text;
+  margin-bottom: 0;
+  padding: 107px 0;
+}
+
+.about__text {
+  @include basic-text;
+  margin: 0 auto;
+  padding: 0 0 127px 0;
+  line-height: 30px;
+  text-align: center;
+}

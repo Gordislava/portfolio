@@ -1,5 +1,4 @@
 .page-header {
-
   width: auto;
   background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -29,14 +28,12 @@
 
   @keyframes slidein {
     from {
-      // margin-right: 100%;
       width: 100%;
       transform: translateY(-50px);
       opacity: 0;
     }
 
     to {
-      // margin-right: 50%;
       width: 100%;
       transform: translateY(0);
       opacity: 1;
@@ -80,5 +77,4 @@
 
 .page-header__button {
   margin: 0 auto;
-  margin-bottom: 342px;
 }
