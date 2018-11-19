@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="all" href="css/animate.min.css">
     <title>Портфолио</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
           Основные навыки
         </h2>
         <ul class="skills__list">
-          <li class="skills__item knowledge-item">
+          <li class="skills__item knowledge-item fadeInUp wow">
             <h3 class="knowledge-item__title">
               SASS/GULP
             </h3>
@@ -35,7 +36,7 @@
               Использую препроцессор Sass, предпочитаю синтксис SCSS, при необходимости без проблем перехожу на LESS. Для автоматизации и сборки использую Gulp.
             </p>
           </li>
-          <li class="skills__item knowledge-item">
+          <li class="skills__item knowledge-item fadeInUp wow"data-wow-delay="500ms">
             <h3 class="knowledge-item__title">
               HTML5/CSS3/JS
             </h3>
@@ -43,7 +44,7 @@
               Использую методологию БЭМ для организации разметки, верстаю семантично и валидно, слежу за кроссбраузерностью во всех современных браузерах.
             </p>
           </li>
-          <li class="skills__item knowledge-item">
+          <li class="skills__item knowledge-item fadeInUp wow" data-wow-delay="1000ms">
             <h3 class="knowledge-item__title">
               ADAPTIVE
             </h3>
@@ -54,18 +55,68 @@
         </ul>
       </section>
       <section class="porfolio">
-        <div class="portfolio__title">
-          <h2 class="portfolio__title-text">
+        <div class="portfolio__header">
+          <h2 class="portfolio__header-text">
             Некоторые проекты
           </h2>
-          <a href="#" class="portfolio__link"></a>
+          <a href="#" class="portfolio__link-down"></a>
         </div>
-        <ul>
-          <li>Проект</li>
-          <li>Проект</li>
-          <li>Проект</li>
-          <li>Проект</li>
-          <li>Проект</li>
+        <ul class="portfolio__list">
+          <li class="portfolio__item project-item">
+            <a href="#" class="project-item__link project-item__link--img">
+              <img src="img/mishka.jpg" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="#" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Учебный проект "Мишка"</h3>
+              </a>
+              <p class="project-item__descr">Адаптивная вёрстка, БЭМ, сборка на Gulp. Главная, каталог, форма + модальное окно с выбором размера.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item">
+            <a href="" class="project-item__link project-item__link--img">
+              <img src="" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="#" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title"> "Камако" - тестовое задание</h3>
+              </a>
+              <p class="project-item__descr">HTML5, CSS3, flexbox, слайдер Pepermint</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item">
+            <a href="" class="project-item__link project-item__link--img">
+              <img src="" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="#" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Учебный проект "Техномарт"</h3>
+              </a>
+              <p class="project-item__descr">Аккуратная валидная верстка главной, страницы каталога и модалього окна. Слайдер, модальное окно и табы на нативном JS.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item">
+            <a href="" class="project-item__link project-item__link--img">
+              <img src="" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="#" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Приют для животных</h3>
+              </a>
+              <p class="project-item__descr">Аккуратный макет сайта приюта для животных: главная и каталог питомцев. Простая семантичная верстка на флексах.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item">
+            <a href="" class="project-item__link project-item__link--img">
+              <img src="" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="#" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Лендинг-портфолио креативного агентства</h3>
+              </a>
+              <p class="project-item__descr">Типичный лендинг, разбитый на отдельные смысловые блоки. Валидная семантичная разметка.</p>
+            </div>
+          </li>
         </ul>
       </section>
       <section class="contacts">
@@ -84,9 +135,7 @@
         <p>Designed by Peter Finlan</p>
       </footer>
     </main>
-
-
-
-
+    <script src="js/wow.js"></script>
+    <script>new WOW().init();</script>
   </body>
 </html>

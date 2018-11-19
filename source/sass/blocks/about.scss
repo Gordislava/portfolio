@@ -6,20 +6,6 @@
 .about__wrapper {
   width: 50%;
   margin: 0 auto;
-  animation-duration: 1s;
-  animation-name: slideleft;
-
-  @keyframes slideleft {
-    from {
-      transform: translateX(-20px);
-      opacity: 0;
-    }
-
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
 }
 
 .about__title {
@@ -34,4 +20,21 @@
   padding: 0 0 127px 0;
   line-height: 30px;
   text-align: center;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-name: slideleft;
+
+  @keyframes slideleft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 }

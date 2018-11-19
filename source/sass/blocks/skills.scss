@@ -26,25 +26,27 @@
   position: relative;
   width: 29%;
   padding: 200px 15px 0 15px;
-  opacity: 0;
-  animation-duration: 2s;
-  animation-name: slideup;
-  // задерживает анимацию в состоянии последнего кадра:
-  animation-fill-mode: forwards;
-
-  @keyframes slideup {
-    from {
-      transform: translateY(50px);
-
-      opacity: 0;
-    }
-
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 }
+
+// .animated {
+//   animation-duration: 2s;
+//   animation-name: slideup;
+//   // задерживает анимацию в состоянии последнего кадра:
+//   animation-fill-mode: forwards;
+//
+//   @keyframes slideup {
+//     from {
+//       transform: translateY(50px);
+//
+//       opacity: 0;
+//     }
+//
+//     to {
+//       transform: translateY(0);
+//       opacity: 1;
+//     }
+//   }
+// }
 
 
 .skills__item::before {
