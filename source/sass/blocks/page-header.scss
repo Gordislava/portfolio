@@ -78,3 +78,17 @@
 .page-header__button {
   margin: 0 auto;
 }
+
+@media (max-width: $tablet) {
+  .page-header__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-header__title {
+    font-size: 34px;
+  }
+}

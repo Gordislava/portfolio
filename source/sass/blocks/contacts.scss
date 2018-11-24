@@ -1,0 +1,34 @@
+.contacts {
+  width: auto;
+  background-color: $bgr-dark;
+}
+
+.contacts__wrapper {
+  width: 71%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  @include title-text;
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+.contacts__list {
+  @include list-norm;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+@media (max-width: 1024px) {
+  .contacts__list {
+    flex-direction: column;
+    width: 100%;
+  }
+}

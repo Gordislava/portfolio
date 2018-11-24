@@ -7,3 +7,19 @@ body {
 a {
   text-decoration: none;
 }
+
+@font-face {
+  font-weight: 500;
+  font-family: "M PLUS Rounded 1c";
+  font-style: normal;
+  src: url("../../fonts/MPLUSRounded1c-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "M PLUS Rounded 1c";
+  font-style: normal;
+  src: url("../../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+  font-display: swap;
+}

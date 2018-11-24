@@ -1,0 +1,17 @@
+.page-footer {
+  width: auto;
+  background-color: $bgr-darkest;
+}
+
+.page-footer__wrapper {
+  width: 71%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.page-footer__text {
+  @include basic-text;
+  padding: 54px 0;
+  text-align: right;
+  margin: 0;
+}
