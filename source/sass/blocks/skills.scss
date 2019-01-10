@@ -26,17 +26,54 @@
   padding: 200px 15px 0 15px;
 }
 
-.skills__item::before {
+.skills__item--html::before {
   content: "";
   position: absolute;
   width: 151px;
   height: 151px;
   background-color: $accent-light;
+  background-image: url("../img/code.svg");
+  background-repeat: no-repeat;
+  background-size: 55px 55px;
+  background-position: center;
   border-radius: 50%;
   top: 0;
   left: 50%;
   margin-left: -72px;
 }
+
+.skills__item--sass::before {
+  content: "";
+  position: absolute;
+  width: 151px;
+  height: 151px;
+  background-color: $accent-light;
+  background-image: url("../img/sass.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  background-position: center;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -72px;
+}
+
+.skills__item--adaptive::before {
+  content: "";
+  position: absolute;
+  width: 151px;
+  height: 151px;
+  background-color: $accent-light;
+  background-image: url("../img/devices.svg");
+  background-repeat: no-repeat;
+  background-size: 55px 55px;
+  background-position: center;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  margin-left: -72px;
+}
+
 
 @media (max-width: 1024px) {
   .skills__list {

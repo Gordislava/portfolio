@@ -49,6 +49,10 @@
   display: none;
 }
 
+.project-item__link:hover {
+  color: $accent-light;
+}
+
 .project-item__descr {
   @include basic-text;
   margin: 0;

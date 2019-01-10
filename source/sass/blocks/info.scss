@@ -18,11 +18,26 @@
   font-family: "M PLUS Rounded 1c", "Arial", sans-serif;
   font-weight: 500;
   color: $accent-light;
-  padding-top: 65px;
+  padding-top: 30px;
   margin: 0;
+  margin-top: 35px;
   text-align: center;
   letter-spacing: 2.1;
   padding-bottom: 30px;
+}
+
+.info__title--phone {
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 18px;
+  background-position: 50% 0%;
+}
+
+.info__title-email {
+  background-image: url("../img/sent-mail.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 18px;
+  background-position: 50% 0%;
 }
 
 .info__text {
